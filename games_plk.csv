@@ -1,0 +1,121 @@
+team_A;team_B;points_A_1;points_B_1;points_A_2;points_B_2
+Anwil Wloclawek;AMW Arka Gdynia;98;108;97;82
+AMW Arka Gdynia;Arriva LOTTO Twarde Pierniki Torun;94;86;86;95
+AMW Arka Gdynia;Dziki Warszawa;78;96;84;94
+AMW Arka Gdynia;Energa Czarni Slupsk;74;66;90;76
+Energa Trefl Sopot;AMW Arka Gdynia;83;85;77;80
+AMW Arka Gdynia;Gornik Zamek Ksiaz Walbrzych;85;69;97;103
+King Szczecin;AMW Arka Gdynia;90;81;91;78
+AMW Arka Gdynia;Legia Warszawa;106;73;84;91
+AMW Arka Gdynia;MKS Dabrowa Gornicza;92;84;83;70
+Miasto Szkla Krosno;AMW Arka Gdynia;60;78;76;95
+ORLEN Zastal Zielona Gora;AMW Arka Gdynia;75;77;82;71
+AMW Arka Gdynia;PGE Start Lublin;75;87;101;80
+AMW Arka Gdynia;Tasomix Rosiek Stal Ostrow Wielkopolski;90;83;82;84
+Tauron GTK Gliwice;AMW Arka Gdynia;66;89;59;76
+WKS Slask Wroclaw;AMW Arka Gdynia;87;68;87;101
+Arriva LOTTO Twarde Pierniki Torun;Anwil Wloclawek;95;101;98;87
+Anwil Wloclawek;Dziki Warszawa;105;96;73;78
+Anwil Wloclawek;Energa Czarni Slupsk;91;80;68;57
+Energa Trefl Sopot;Anwil Wloclawek;83;74;79;94
+Anwil Wloclawek;Gornik Zamek Ksiaz Walbrzych;97;90;86;61
+Anwil Wloclawek;King Szczecin;92;94;74;84
+Legia Warszawa;Anwil Wloclawek;80;75;91;83
+Anwil Wloclawek;MKS Dabrowa Gornicza;89;78;94;85
+Anwil Wloclawek;Miasto Szkla Krosno;99;93;101;87
+ORLEN Zastal Zielona Gora;Anwil Wloclawek;91;82;70;79
+Anwil Wloclawek;PGE Start Lublin;90;81;91;97
+Tasomix Rosiek Stal Ostrow Wielkopolski;Anwil Wloclawek;104;89;81;90
+Anwil Wloclawek;Tauron GTK Gliwice;93;58;86;87
+WKS Slask Wroclaw;Anwil Wloclawek;86;79;83;96
+Dziki Warszawa;Arriva LOTTO Twarde Pierniki Torun;110;91;83;82
+Arriva LOTTO Twarde Pierniki Torun;Energa Czarni Slupsk;98;111;93;103
+Arriva LOTTO Twarde Pierniki Torun;Energa Trefl Sopot;95;86;72;92
+Gornik Zamek Ksiaz Walbrzych;Arriva LOTTO Twarde Pierniki Torun;64;71;96;73
+Arriva LOTTO Twarde Pierniki Torun;King Szczecin;68;77;82;90
+Arriva LOTTO Twarde Pierniki Torun;Legia Warszawa;67;82;81;82
+Arriva LOTTO Twarde Pierniki Torun;MKS Dabrowa Gornicza;93;105;79;90
+Miasto Szkla Krosno;Arriva LOTTO Twarde Pierniki Torun;81;88;105;112
+Arriva LOTTO Twarde Pierniki Torun;ORLEN Zastal Zielona Gora;95;81;90;88
+PGE Start Lublin;Arriva LOTTO Twarde Pierniki Torun;90;85;88;97
+Arriva LOTTO Twarde Pierniki Torun;Tasomix Rosiek Stal Ostrow Wielkopolski;109;79;75;77
+Arriva LOTTO Twarde Pierniki Torun;Tauron GTK Gliwice;90;88;99;107
+WKS Slask Wroclaw;Arriva LOTTO Twarde Pierniki Torun;87;75;106;113
+Energa Czarni Slupsk;Dziki Warszawa;96;102;86;106
+Dziki Warszawa;Energa Trefl Sopot;80;86;104;64
+Gornik Zamek Ksiaz Walbrzych;Dziki Warszawa;71;69;84;78
+Dziki Warszawa;King Szczecin;85;96;88;91
+Legia Warszawa;Dziki Warszawa;79;84;95;88
+Dziki Warszawa;MKS Dabrowa Gornicza;96;93;82;95
+Miasto Szkla Krosno;Dziki Warszawa;80;95;85;90
+Dziki Warszawa;ORLEN Zastal Zielona Gora;98;86;86;105
+PGE Start Lublin;Dziki Warszawa;76;101;72;103
+Dziki Warszawa;Tasomix Rosiek Stal Ostrow Wielkopolski;80;61;83;73
+Tauron GTK Gliwice;Dziki Warszawa;88;82;83;108
+WKS Slask Wroclaw;Dziki Warszawa;109;100;82;81
+Energa Trefl Sopot;Energa Czarni Slupsk;97;61;76;72
+Energa Czarni Slupsk;Gornik Zamek Ksiaz Walbrzych;88;92;107;90
+Energa Czarni Slupsk;King Szczecin;101;76;83;84
+Legia Warszawa;Energa Czarni Slupsk;87;76;82;87
+MKS Dabrowa Gornicza;Energa Czarni Slupsk;83;71;102;88
+Energa Czarni Slupsk;Miasto Szkla Krosno;85;81;91;77
+Energa Czarni Slupsk;ORLEN Zastal Zielona Gora;63;95;80;96
+Energa Czarni Slupsk;PGE Start Lublin;98;72;96;101
+Energa Czarni Slupsk;Tasomix Rosiek Stal Ostrow Wielkopolski;86;93;68;75
+Tauron GTK Gliwice;Energa Czarni Slupsk;73;85;89;80
+WKS Slask Wroclaw;Energa Czarni Slupsk;87;64;91;86
+Energa Trefl Sopot;Gornik Zamek Ksiaz Walbrzych;84;77;100;91
+Energa Trefl Sopot;King Szczecin;84;74;96;85
+Legia Warszawa;Energa Trefl Sopot;78;88;100;93
+MKS Dabrowa Gornicza;Energa Trefl Sopot;93;81;100;77
+Miasto Szkla Krosno;Energa Trefl Sopot;85;105;81;94
+ORLEN Zastal Zielona Gora;Energa Trefl Sopot;92;90;75;78
+PGE Start Lublin;Energa Trefl Sopot;84;105;97;103
+Tasomix Rosiek Stal Ostrow Wielkopolski;Energa Trefl Sopot;89;80;86;88
+Energa Trefl Sopot;Tauron GTK Gliwice;97;61;96;92
+Energa Trefl Sopot;WKS Slask Wroclaw;93;81;85;96
+King Szczecin;Gornik Zamek Ksiaz Walbrzych;64;77;76;97
+Gornik Zamek Ksiaz Walbrzych;Legia Warszawa;81;79;68;93
+MKS Dabrowa Gornicza;Gornik Zamek Ksiaz Walbrzych;79;96;103;73
+Miasto Szkla Krosno;Gornik Zamek Ksiaz Walbrzych;86;70;74;90
+ORLEN Zastal Zielona Gora;Gornik Zamek Ksiaz Walbrzych;79;86;89;82
+PGE Start Lublin;Gornik Zamek Ksiaz Walbrzych;85;79;86;81
+Gornik Zamek Ksiaz Walbrzych;Tasomix Rosiek Stal Ostrow Wielkopolski;80;72;74;86
+Gornik Zamek Ksiaz Walbrzych;Tauron GTK Gliwice;90;81;92;82
+Gornik Zamek Ksiaz Walbrzych;WKS Slask Wroclaw;85;83;75;100
+King Szczecin;Legia Warszawa;83;81;84;88
+MKS Dabrowa Gornicza;King Szczecin;102;93;89;102
+Miasto Szkla Krosno;King Szczecin;72;82;85;88
+King Szczecin;ORLEN Zastal Zielona Gora;80;66;75;74
+PGE Start Lublin;King Szczecin;83;74;75;81
+King Szczecin;Tasomix Rosiek Stal Ostrow Wielkopolski;97;72;76;81
+King Szczecin;Tauron GTK Gliwice;85;78;93;86
+WKS Slask Wroclaw;King Szczecin;80;83;81;90
+Legia Warszawa;MKS Dabrowa Gornicza;84;63;90;85
+Legia Warszawa;Miasto Szkla Krosno;82;68;94;87
+ORLEN Zastal Zielona Gora;Legia Warszawa;71;88;66;84
+Legia Warszawa;PGE Start Lublin;90;68;84;52
+Legia Warszawa;Tasomix Rosiek Stal Ostrow Wielkopolski;98;89;83;75
+Tauron GTK Gliwice;Legia Warszawa;81;89;66;93
+WKS Slask Wroclaw;Legia Warszawa;98;84;104;99
+Miasto Szkla Krosno;MKS Dabrowa Gornicza;92;87;89;91
+ORLEN Zastal Zielona Gora;MKS Dabrowa Gornicza;82;70;86;91
+PGE Start Lublin;MKS Dabrowa Gornicza;81;78;100;105
+Tasomix Rosiek Stal Ostrow Wielkopolski;MKS Dabrowa Gornicza;77;91;84;91
+MKS Dabrowa Gornicza;Tauron GTK Gliwice;88;72;90;80
+MKS Dabrowa Gornicza;WKS Slask Wroclaw;80;99;90;95
+ORLEN Zastal Zielona Gora;Miasto Szkla Krosno;98;84;99;87
+Miasto Szkla Krosno;PGE Start Lublin;81;82;95;87
+Tasomix Rosiek Stal Ostrow Wielkopolski;Miasto Szkla Krosno;92;89;87;80
+Tauron GTK Gliwice;Miasto Szkla Krosno;98;75;87;88
+WKS Slask Wroclaw;Miasto Szkla Krosno;89;60;88;66
+PGE Start Lublin;ORLEN Zastal Zielona Gora;77;91;73;76
+ORLEN Zastal Zielona Gora;Tasomix Rosiek Stal Ostrow Wielkopolski;98;84;82;75
+Tauron GTK Gliwice;ORLEN Zastal Zielona Gora;62;86;81;98
+WKS Slask Wroclaw;ORLEN Zastal Zielona Gora;90;85;80;76
+PGE Start Lublin;Tasomix Rosiek Stal Ostrow Wielkopolski;76;91;78;93
+Tauron GTK Gliwice;PGE Start Lublin;95;93;82;86
+PGE Start Lublin;WKS Slask Wroclaw;91;98;91;98
+Tasomix Rosiek Stal Ostrow Wielkopolski;Tauron GTK Gliwice;96;93;76;73
+Tasomix Rosiek Stal Ostrow Wielkopolski;WKS Slask Wroclaw;93;72;77;73
+Tauron GTK Gliwice;WKS Slask Wroclaw;86;93;85;84

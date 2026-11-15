@@ -1,0 +1,121 @@
+---
+title: "Untitled"
+author: "Mikołaj Wojciechowski"
+date: "2026-06-15"
+output: html_document
+---
+
+```{r}
+games <- read.csv2("games_plk.csv", stringsAsFactors = FALSE)
+games$points_A_1 <- as.numeric(games$points_A_1)
+games$points_B_1 <- as.numeric(games$points_B_1)
+games$points_A_2 <- as.numeric(games$points_A_2)
+games$points_B_2 <- as.numeric(games$points_B_2)
+
+games$x <- games$points_A_1 - games$points_B_1
+games$y <- ifelse(games$points_A_2 > games$points_B_2, 1, 0)
+
+model_logit <- glm(y ~ x, data = games, family = binomial(link = "logit"))
+print(summary(model_logit))
+
+beta0 <- unname(coef(model_logit)[1])
+beta1 <- unname(coef(model_logit)[2])
+cat(sprintf("\nEstimated parameters: beta0 = %.4f, beta1 = %.4f\n\n",
+            beta0, beta1))
+
+plot(games$x, games$y,
+     pch = 20, col = "gray40",
+     xlab = "Point difference in the home game (x)",
+     ylab = "Rematch won (y)",
+     main = "Fitted logistic regression curve")
+     xlim = c(-150,150)
+     ylim = c(0,1)
+xs <- seq(-150, 150, length.out = 500)
+lines(xs, plogis(beta0 + beta1 * xs), col = "blue", lwd = 2)
+abline(h = 0.5, lty = 3, col = "gray60")
+abline(v = -beta0 / beta1, lty = 3, col = "gray60")
+
+plot(games$x, games$y,
+     pch = 20, col = "gray40",
+     xlim = c(-150, 150),
+     ylim = c(0, 1),
+     xlab = "Point difference in the home game (x)",
+     ylab = "Rematch won (y)",
+     main = "Logistic regression curve on a wider range")
+xs2 <- seq(-150, 150, length.out = 500)
+lines(xs2, plogis(beta0 + beta1 * xs2), col = "blue", lwd = 2)
+abline(h = 0.5, lty = 3, col = "gray60")
+abline(v = -beta0 / beta1, lty = 3, col = "gray60")
+
+teams <- sort(unique(c(games$team_A, games$team_B)))
+n <- length(teams)
+
+T <- matrix(0, nrow = n, ncol = n)
+N <- rep(0, n)
+
+for (k in 1:nrow(games)) {
+  i <- which(teams == games$team_A[k])
+  j <- which(teams == games$team_B[k])
+  x_margin <- games$points_A_1[k] - games$points_B_1[k]
+  p <- plogis(beta0 + beta1 * x_margin)
+  T[i, i] <- T[i, i] + p
+  T[i, j] <- T[i, j] + (1 - p)
+  T[j, i] <- T[j, i] + p
+  T[j, j] <- T[j, j] + (1 - p)
+  N[i] <- N[i] + 1
+  N[j] <- N[j] + 1
+
+  i <- which(teams == games$team_B[k])
+  j <- which(teams == games$team_A[k])
+  x_margin <- games$points_B_2[k] - games$points_A_2[k]
+  p <- plogis(beta0 + beta1 * x_margin)
+  T[i, i] <- T[i, i] + p
+  T[i, j] <- T[i, j] + (1 - p)
+  T[j, i] <- T[j, i] + p
+  T[j, j] <- T[j, j] + (1 - p)
+  N[i] <- N[i] + 1
+  N[j] <- N[j] + 1
+}
+
+for (i in 1:n) T[i, ] <- T[i, ] / N[i]
+rownames(T) <- teams
+colnames(T) <- teams
+
+cat("\n=== Transition matrix properties ===\n")
+cat("Row sums = 1 (stochasticity):        ",
+    all(abs(rowSums(T) - 1) < 1e-10), "\n")
+cat("All elements non-negative:           ",
+    all(T >= 0), "\n")
+cat("t_ii > 0 for all i (aperiodicity):   ",
+    all(diag(T) > 0), "\n")
+
+power_sum <- diag(n)
+current   <- diag(n)
+for (k in 1:(n - 1)) {
+  current   <- current %*% T
+  power_sum <- power_sum + current
+}
+cat("Irreducibility:                      ", all(power_sum > 0), "\n")
+
+pi_t <- matrix(1 / n, nrow = 1, ncol = n)
+n_iter <- 500
+for (k in 1:n_iter) {
+  pi_t <- pi_t %*% T
+}
+pi_stat <- as.numeric(pi_t)
+names(pi_stat) <- teams
+
+ranking <- data.frame(
+  rank       = 1:n,
+  team       = names(sort(pi_stat, decreasing = TRUE)),
+  LRMC_score = round(sort(pi_stat, decreasing = TRUE), 5)
+)
+cat("\n=== LRMC ranking (team strength) ===\n")
+print(ranking, row.names = FALSE)
+
+```
+
+
+
+
+
