@@ -1,7 +1,9 @@
 # Markov Chains as a Ranking Tool — LRMC Ranking of the Polish Basketball League
 
 Bachelor's thesis project · **Actuarial Science & Financial Analysis, Lodz University of Technology (2026)**
+
 Author: **Mikołaj Wojciechowski** · Supervisor: Dr. Grzegorz Skalski
+
 Thesis (in Polish): see the `thesis/` folder
 
 ## Why this project
